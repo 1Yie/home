@@ -1,0 +1,116 @@
+@import url("https://static.zeoseven.com/zsft/189/main/result.css");
+@import url("https://fonts.font.im/css?family=Ubuntu");
+@import url(https://fonts.font.im/css?family=Source+Code+Pro:500);
+
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", "Noto Sans CJK KR", sans-serif;
+}
+
+.HtmlLogo {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+section {
+  width: 1200px;
+  max-width: 100vw;
+  margin: 0 auto;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  padding: 3px 6px;
+  background-color: #ececec6f;
+  /* 可被复制 */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  border-radius: 8px;
+  color: #000;
+}
+
+a {
+  color: rgb(56, 56, 56) ;
+  text-decoration: none;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background-color: #f2f2f2;
+}
+::-webkit-scrollbar,
+scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: rgb(226, 226, 226);
+}
+
+::-webkit-scrollbar-thumb,
+scrollbar-thumb {
+  border-radius: 0;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  .HtmlLogo {
+    color: #fff !important;
+  }
+
+  ::-webkit-scrollbar,
+  scrollbar {
+    width: 12px;
+    height: 6px;
+    background-color: rgb(39, 39, 39);
+  }
+
+  ::-webkit-scrollbar-thumb,
+  scrollbar-thumb {
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+  }
+}

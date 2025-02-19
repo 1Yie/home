@@ -1,0 +1,180 @@
+#projects {
+  border-bottom: 1px solid #dedede;
+
+  .container {
+    padding: 0;
+  }
+
+  .intro {
+    background-color: rgba(248, 248, 248, 0.436);
+    padding: 40px;
+    h1 {
+      color: rgb(59, 59, 59);
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: rgb(119, 119, 119);
+      font-size: 15px;
+    }
+  }
+
+  .projectList {
+    display: grid;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    grid-template-rows: auto;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .project {
+    display: grid;
+    /* grid-template-columns: 200px 1fr 130px 130px 70px; */
+    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #f6f6f6b0;
+    }
+
+    /* h3,
+    p {
+      font-family: "Raleway", sans-serif;
+    } */
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      color: gray;
+      font-weight: 400;
+    }
+  }
+  .project:last-child {
+    border-bottom: none;
+  }
+
+  .projectList::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      to right,
+      #dedede 0px,
+      #dedede 20px,
+      transparent 20px,
+      transparent 30px
+    );
+    background-position-x: 15px;
+    background-position-y: top;
+    background-size: 100% 1px;
+    background-repeat: repeat-x;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #dedede;
+  }
+
+  path {
+    width: 100px;
+    fill: #3b3b3b;
+  }
+
+  .details {
+    padding: 0 40px;
+
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid #dedede;
+  }
+
+  .empty {
+    background-size: 100%;
+    background-image: repeating-linear-gradient(
+      135deg,
+      #f6f6f6 0px,
+      #f6f6f6 1px,
+      transparent 1px,
+      transparent 20px
+    );
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    .project {
+      grid-template-columns: 1fr;
+    }
+
+    .empty {
+      display: none;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    
+    .details {
+      align-items: center !important;
+      text-align: center !important;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #projects {
+    .empty {
+      background-size: 100%;
+      background-image: repeating-linear-gradient(
+        135deg,
+        #4d4d4d 0px,
+        #4d4d4d 1px,
+        transparent 1px,
+        transparent 20px
+      ) !important;
+    }
+
+    .intro {
+      background-color: rgba(59, 59, 59, 0.436) !important;
+    }
+
+    p {
+      color: #a8a8a8 !important;
+    }
+
+    path {
+      fill: #d7d6d6 !important;
+    }
+
+    .project {
+      &:hover {
+        background-color: #4d4d4db0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.aboutContainer {
+  border-bottom: 1px solid #dedede;
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    height: 150px;
+
+    background-size: 14px 14px;
+    background-image: linear-gradient(to right, #f6f6f6 1px, transparent 1px),
+      linear-gradient(to bottom, #f6f6f6 1px, transparent 1px);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.space {
+  border-bottom: 1px solid #dedede;
+  background-color: rgba(248, 248, 248, 0.436);
+  #spaceConent {
+    height: 50px;
+  }
+}

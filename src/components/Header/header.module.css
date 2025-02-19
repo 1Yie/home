@@ -1,0 +1,56 @@
+@import url(https://fonts.font.im/css?family=Raleway:400,200,300,100,500,600,700,800,900);
+
+.header {
+	border-bottom: 1px solid #dedede;
+}
+
+.headerContainer {
+	margin: 0 auto;
+	padding: 10px 24px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+}
+
+.header li {
+    cursor: pointer;
+}
+
+.header a {
+	padding: 8px;
+    color: gray;
+    text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.active {
+	color: black !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.header a {
+		color: rgb(164, 164, 164);
+	}
+
+	.active {
+		color: rgb(255, 255, 255) !important;
+	}
+	
+}

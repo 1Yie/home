@@ -1,0 +1,63 @@
+@import url(https://fonts.font.im/css?family=Source+Code+Pro:500);
+
+.footer {
+  a {
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    color: #777;
+  }
+
+  span {
+    color: #777;
+  }
+
+  .container {
+    padding: 17px 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerLogo {
+    font-size: 18px;
+    font-weight: 500;
+    color: black !important;
+    text-decoration: none;
+  }
+
+  .copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .sociallinks {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .socialLink {
+    text-decoration: none;
+    padding: 8px;
+    color: #777;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
