@@ -91,7 +91,7 @@ scrollbar-thumb {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     background-color: #121212;
     color: #fff;
@@ -113,4 +113,4 @@ scrollbar-thumb {
     border-radius: 0;
     background-color: rgb(255, 255, 255);
   }
-}
+} */

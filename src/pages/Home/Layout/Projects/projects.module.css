@@ -79,10 +79,10 @@
     height: 1px;
     background-image: repeating-linear-gradient(
       to right,
-      #dedede 0px,
-      #dedede 20px,
-      transparent 20px,
-      transparent 30px
+      #dedede -10px,
+      #dedede 10px,
+      transparent 10px,
+      transparent 20px
     );
     background-position-x: 15px;
     background-position-y: top;
@@ -146,7 +146,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   #projects {
     .empty {
       background-size: 100%;
@@ -177,4 +177,4 @@
       }
     }
   }
-}
+} */

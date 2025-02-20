@@ -1,0 +1,30 @@
+.infoContainer {
+  border-bottom: 1px solid #dedede;
+  #info {
+    padding: 50px;
+
+    .infoContent {
+      padding: 0 80px;
+    }
+
+    p {
+      margin-top: 4px;
+    }
+  }
+}
+
+.space {
+  border-bottom: 1px solid #dedede;
+  #spaceConent {
+    height: 60px;
+
+    background-size: 100%;
+    background-image: repeating-linear-gradient(
+      135deg,
+      #f6f6f6 0px,
+      #f6f6f6 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  }
+}

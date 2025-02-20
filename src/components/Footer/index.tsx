@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@ricons/utils";
 import { Github, Twitter } from "@ricons/fa";
+import { Mail } from "@ricons/ionicons5"
 import style from "./footer.module.css";
 
 const headerName = {
@@ -11,9 +12,15 @@ const headerName = {
 const iconComponents = {
   Github: Github,
   Twitter: Twitter,
+  Mail: Mail,
 };
 
 const socialLinks = [
+  {
+    name: "E-mail",
+    link: "mailto:me@ichiyo.in",
+    icon: "Mail",
+  },
   {
     name: "GitHub",
     link: "https://github.com/1Yie",
@@ -23,7 +30,7 @@ const socialLinks = [
     name: "Twitter",
     link: "https://x.com/IchiyoNico",
     icon: "Twitter",
-  },
+  }
 ];
 
 const Footer: React.FC = () => {

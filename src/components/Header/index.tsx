@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./header.module.css";
-import { Link, useLocation } from "react-router-dom"; // 导入 Link 和 useLocation
+import { Link, useLocation } from "react-router-dom";
 
 const headerName = {
   name: "ichiyo",
@@ -23,7 +23,7 @@ const headerList = [
 ];
 
 const Header: React.FC = () => {
-  const location = useLocation(); // 使用 useLocation Hook 获取当前 URL 信息
+  const location = useLocation();
 
   return (
     <>

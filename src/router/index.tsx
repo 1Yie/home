@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Page from "../pages";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Links from "../pages/Links";
 import Error404 from "../components/ErrorPage/404"
 
 import DefaultElement from "../utils/SetTitle";
@@ -24,7 +25,7 @@ const router = createBrowserRouter(
         },
         {
           path: "links",
-          element: <DefaultElement element={Error404} meta={{ title: "ichiyo | 404" }} />
+          element: <DefaultElement element={Links} meta={{ title: "ichiyo | Links" }} />
         },
         {
           path: "*",
