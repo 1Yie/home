@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@ricons/utils";
-import { Github, Twitter } from "@ricons/fa";
-import { Mail } from "@ricons/ionicons5"
+import { Mail, LogoGithub, LogoTwitter } from "@ricons/ionicons5"
 import style from "./footer.module.css";
 
 const headerName = {
@@ -10,8 +9,8 @@ const headerName = {
 };
 
 const iconComponents = {
-  Github: Github,
-  Twitter: Twitter,
+  Github: LogoGithub,
+  Twitter: LogoTwitter,
   Mail: Mail,
 };
 
@@ -61,7 +60,6 @@ const Footer: React.FC = () => {
                   href={link.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={style.socialLink}
                 >
                   <Icon size={24} color="#777">
                     <IconComponent aria-label={link.name} />

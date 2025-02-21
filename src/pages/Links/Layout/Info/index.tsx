@@ -34,8 +34,9 @@ const Info: React.FC = () => {
               <strong>
                 头像、名称、介绍、链接、以及社交账号地址（如 GitHub、Twitter
                 等）
-              </strong>；
+              </strong>。
             </p>
+            <p><strong>邮箱地址：<a href="mailto:me@ichiyo.in">me@ichiyo.in</a></strong></p>
             <p>
               <strong>邮箱主题为：友链申请</strong>
               ，我将在第一时间审核并添加到友链栏目中。

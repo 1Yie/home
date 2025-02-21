@@ -9,13 +9,9 @@
     font-size: 14px;
     color: #777;
   }
-
-  span {
-    color: #777;
-  }
-
+  
   .container {
-    padding: 17px 20px;
+    padding: 15px 20px;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -25,38 +21,41 @@
     align-items: center;
   }
 
-  .headerLogo {
-    font-size: 18px;
-    font-weight: 500;
-    color: black !important;
-    text-decoration: none;
-  }
-
   .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     pointer-events: none;
+
+    p {
+      font-family: "Source Code Pro", monospace;
+      font-size: 14px;
+      color: #777;
+      pointer-events: auto;
+    }
   }
 
   .sociallinks {
+    margin-left: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+    z-index: 1;
 
-  .socialLink {
-    text-decoration: none;
-    padding: 8px;
-    color: #777;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-      color: black;
+    span {
+      text-decoration: none;
+      color: #777;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: black !important;
+      }
     }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .copyright {
+    display: none;
   }
 }

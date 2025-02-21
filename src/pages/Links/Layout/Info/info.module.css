@@ -1,9 +1,12 @@
 .infoContainer {
   border-bottom: 1px solid #dedede;
+
   #info {
     padding: 50px;
+    background-color: #f8f8f86f;
 
     .infoContent {
+
       padding: 0 80px;
     }
 
@@ -15,16 +18,27 @@
 
 .space {
   border-bottom: 1px solid #dedede;
+
   #spaceConent {
     height: 60px;
 
     background-size: 100%;
-    background-image: repeating-linear-gradient(
-      135deg,
-      #f6f6f6 0px,
-      #f6f6f6 1px,
-      transparent 1px,
-      transparent 6px
-    );
+    background-image: repeating-linear-gradient(135deg,
+        #f6f6f6 0px,
+        #f6f6f6 1px,
+        transparent 1px,
+        transparent 6px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .infoContainer {
+    #info {
+      padding: 20px;
+
+      .infoContent {
+        padding: 0 10px;
+      }
+    }
   }
 }

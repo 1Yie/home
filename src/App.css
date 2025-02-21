@@ -36,6 +36,8 @@ body {
   font-weight: 500;
   color: black !important;
   text-decoration: none !important;
+  z-index: 1;
+  white-space: nowrap;
 }
 
 section {
