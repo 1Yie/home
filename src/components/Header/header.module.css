@@ -25,7 +25,7 @@
 	font-size: 1.5rem;
 	cursor: pointer;
 	padding: 8px;
-	color: #666;
+	color : black;
 }
 
 .nav {
@@ -65,7 +65,9 @@
 
 @media (max-width: 768px) {
 	.menuButton {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 8px;
 	}
 
@@ -97,7 +99,7 @@
 
 	.navList li {
 		padding: 12px 0;
-		border-bottom: 1px solid #f0eeeec5;
+		border-bottom: .5px solid #f0eeee98;
 	}
 
 	.navList li:last-child {

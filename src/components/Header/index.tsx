@@ -1,6 +1,11 @@
-import React, { useState  } from "react";
+import React, { useState } from "react";
 import style from "./header.module.css";
 import { Link, useLocation } from "react-router-dom";
+
+import { Icon } from "@ricons/utils";
+
+import { MenuSharp } from "@ricons/ionicons5";
+
 
 const headerName = {
   name: "ichiyo",
@@ -33,14 +38,16 @@ const Header: React.FC = () => {
           <a href={headerName.link} className="HtmlLogo">
             {headerName.name}
           </a>
-          
-          <button 
+
+          <a
             className={style.menuButton}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation"
           >
-            ☰
-          </button>
+            <Icon size="26">
+              <MenuSharp />
+            </Icon>
+          </a>
 
           <nav className={`${style.nav} ${isMenuOpen ? style.navActive : ""}`}>
             <ul className={style.navList}>

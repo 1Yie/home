@@ -37,4 +37,4 @@ const AppRouter: React.FC = () => {
 };
 
 export default AppRouter;
-export { routes };
+// export { routes };
