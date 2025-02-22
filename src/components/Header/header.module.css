@@ -2,7 +2,6 @@
 
 .header {
 	border-bottom: 1px solid #dedede;
-	position: relative;
 
 	a {
 		padding: 8px;
@@ -15,7 +14,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
 }
 
 .menuButton {
@@ -25,12 +23,16 @@
 	font-size: 1.5rem;
 	cursor: pointer;
 	padding: 8px;
-	color : black;
+	color: black;
 }
 
 .nav {
 	display: flex;
 	transition: all 0.3s ease;
+}
+
+.nav.navActive {
+	z-index: 1000;
 }
 
 .navList {
@@ -64,6 +66,10 @@
 }
 
 @media (max-width: 768px) {
+	.headerContainer {
+		position: relative;
+	}
+
 	.menuButton {
 		display: flex;
 		align-items: center;
@@ -87,6 +93,7 @@
 
 	.nav.navActive {
 		max-height: 500px;
+		pointer-events: auto;
 	}
 
 	.navList {
@@ -106,5 +113,3 @@
 		border-bottom: none;
 	}
 }
-
-/* 暗色模式样式保持原样 */

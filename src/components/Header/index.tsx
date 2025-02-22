@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import style from "./header.module.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -30,6 +30,26 @@ const headerList = [
 const Header: React.FC = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        buttonRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className={style.header}>
@@ -40,6 +60,7 @@ const Header: React.FC = () => {
           </a>
 
           <a
+            ref={buttonRef}
             className={style.menuButton}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation"
@@ -49,7 +70,10 @@ const Header: React.FC = () => {
             </Icon>
           </a>
 
-          <nav className={`${style.nav} ${isMenuOpen ? style.navActive : ""}`}>
+          <nav
+            ref={menuRef}
+            className={`${style.nav} ${isMenuOpen ? style.navActive : ""}`}
+          >
             <ul className={style.navList}>
               {headerList.map((item, index) => (
                 <li key={index}>
