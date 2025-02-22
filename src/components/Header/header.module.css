@@ -2,56 +2,107 @@
 
 .header {
 	border-bottom: 1px solid #dedede;
+	position: relative;
+
+	a {
+		padding: 8px;
+	}
 }
 
 .headerContainer {
 	margin: 0 auto;
 	padding: 10px 24px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.header nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100%;
+	position: relative;
 }
 
-.header ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0px;
-}
-
-.header li {
-    cursor: pointer;
-}
-
-.header a {
+.menuButton {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
 	padding: 8px;
-    color: gray;
-    text-decoration: none;
+	color: #666;
+}
+
+.nav {
+	display: flex;
+	transition: all 0.3s ease;
+}
+
+.navList {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+	padding: 0;
+}
+
+.navList li {
+	cursor: pointer;
+}
+
+.navList a {
+	color: gray;
+	text-decoration: none;
 	transition: color 0.3s ease-in-out;
+
 	&:hover {
 		text-decoration: none;
 	}
 }
 
-.active {
-	color: black !important;
+.navList a:hover {
+	color: #333;
 }
 
-/* @media (prefers-color-scheme: dark) {
-	.header a {
-		color: rgb(164, 164, 164);
+.active {
+	color: black !important;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.menuButton {
+		display: block;
+		padding: 8px;
 	}
 
-	.active {
-		color: rgb(255, 255, 255) !important;
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: white;
+		flex-direction: column;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+
+		border-bottom: 1px solid #dedede;
 	}
-	
-} */
+
+	.nav.navActive {
+		max-height: 500px;
+	}
+
+	.navList {
+		flex-direction: column;
+		gap: 0;
+		margin: 0;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.navList li {
+		padding: 12px 0;
+		border-bottom: 1px solid #f0eeeec5;
+	}
+
+	.navList li:last-child {
+		border-bottom: none;
+	}
+}
+
+/* 暗色模式样式保持原样 */
