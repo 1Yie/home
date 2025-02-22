@@ -23,7 +23,7 @@ const projects = [
   },
   {
     name: "ICHIYO STATUS",
-    description: "用于检测服务以及网页的状态",
+    description: "用于检测各种服务的状态",
     link: "https://status.ichiyo.in/",
     icon: "Check",
   },

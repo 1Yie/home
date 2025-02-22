@@ -37,7 +37,7 @@
   .project {
     display: grid;
     /* grid-template-columns: 200px 1fr 130px 130px 70px; */
-    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr;
     border-bottom: 1px solid #dedede;
     width: 100%;
@@ -114,6 +114,7 @@
 
   .empty {
     background-size: 100%;
+
     background-image: repeating-linear-gradient(
       135deg,
       #f6f6f6 0px,
@@ -121,6 +122,18 @@
       transparent 1px,
       transparent 20px
     );
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #projects {
+    .project {
+      grid-template-columns: 0.5fr 1fr;
+    }
+
+    .empty {
+      display: none;
+    }
   }
 }
 
@@ -138,7 +151,6 @@
       display: none;
     }
 
-    
     .details {
       align-items: center !important;
       text-align: center !important;
