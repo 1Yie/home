@@ -3,12 +3,12 @@
 @import url('https://static.zeoseven.com/zsft/309/main/result.css');
 
 .main {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
   
   #container {
     background-size: 14px 14px;
-    background-image: linear-gradient(to right, #f6f6f6 1px, transparent 1px),
-      linear-gradient(to bottom, #f6f6f6 1px, transparent 1px);
+    background-image: linear-gradient(to right, var(--bg-border-color)1px, transparent 1px),
+      linear-gradient(to bottom, var(--bg-border-color) 1px, transparent 1px);
   }
 
   .content {
@@ -29,7 +29,7 @@
 
   p {
     /* font-family: 'Raleway', sans-serif; */
-    color: gray;
+    color: var(--text-sub-color);
     font-weight: 400;
     font-size: 19px;
   }

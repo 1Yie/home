@@ -1,5 +1,5 @@
 .linkContainer {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
   #links {
     display: flex;
     justify-content: center;
@@ -8,12 +8,12 @@
     padding: 20px;
     height: 150px;
     background-size: 14px 14px;
-    background-image: linear-gradient(to right, #f6f6f6 1px, transparent 1px),
-      linear-gradient(to bottom, #f6f6f6 1px, transparent 1px);
+    background-image: linear-gradient(to right, var(--bg-border-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--bg-border-color) 1px, transparent 1px);
 
       p {
         margin-top: 8px;
-        color: gray;
+        color: var(--text-sub-color);
       }
   }
 
@@ -23,19 +23,19 @@
 }
 
 .space {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
 
   background-size: 100%;
   background-image: repeating-linear-gradient(
     135deg,
-    #f6f6f6 0px,
-    #f6f6f6 1px,
+    var(--bg-border-color) 0px,
+    var(--bg-border-color) 1px,
     transparent 1px,
     transparent 6px
   );
 
   #spaceConent {
     height: 120px;
-    background-color: #fff;
+    background-color: var(--bg-color);
   }
 }

@@ -1,7 +1,7 @@
 @import url(https://fonts.font.im/css?family=Raleway:400,200,300,100,500,600,700,800,900);
 
 .header {
-	border-bottom: 1px solid #dedede;
+	border-bottom: 1px solid var(--border-color);
 
 	a {
 		padding: 8px;
@@ -23,7 +23,7 @@
 	font-size: 1.5rem;
 	cursor: pointer;
 	padding: 8px;
-	color: black;
+	color: var(--text-color);
 }
 
 .nav {
@@ -47,7 +47,7 @@
 }
 
 .navList a {
-	color: gray;
+	color: var(--text-sub-color);
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 
@@ -57,11 +57,11 @@
 }
 
 .navList a:hover {
-	color: #333;
+	color: var(--header-link-active-color);
 }
 
 .active {
-	color: black !important;
+	color: var(--text-color) !important;
 	font-weight: 500;
 }
 
@@ -82,13 +82,12 @@
 		top: 100%;
 		left: 0;
 		right: 0;
-		background: white;
+		background: var(--bg-color);
 		flex-direction: column;
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 0.3s ease;
-
-		border-bottom: 1px solid #dedede;
+		border-bottom: 1px solid var(--border-color);
 	}
 
 	.nav.navActive {
@@ -106,7 +105,7 @@
 
 	.navList li {
 		padding: 12px 0;
-		border-bottom: .5px solid #f0eeee98;
+		border-bottom: .8px solid var( --header-menu-border-color);
 	}
 
 	.navList li:last-child {

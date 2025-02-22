@@ -1,14 +1,14 @@
 .friendContainer {
-  background-color: #f8f8f85b;
+  background-color: var(--bg-sub-panel-color);
   background-size: 100%;
   background-image: repeating-linear-gradient(
     45deg,
-    #f6f6f6 0px,
-    #f6f6f6 1px,
+    var(--bg-border-color) 0px,
+    var(--bg-border-color) 1px,
     transparent 1px,
     transparent 30px
   );
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
 }
 
 #friends {
@@ -34,7 +34,7 @@
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: #dcdcdc solid 2px;
+  border: var(--avatar-border-color) solid 2px;
 }
 
 .friendInfo {
@@ -50,7 +50,7 @@
 
 .friendDescription {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-sub-color);
   margin-top: 10px;
 }
 

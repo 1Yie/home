@@ -7,7 +7,7 @@
   p {
     font-family: "Source Code Pro", monospace;
     font-size: 14px;
-    color: #777;
+    color: var( --footer-text-color);
   }
   
   .container {
@@ -30,7 +30,7 @@
     p {
       font-family: "Source Code Pro", monospace;
       font-size: 14px;
-      color: #777;
+      color: var( --footer-text-color);
       pointer-events: auto;
     }
   }
@@ -42,12 +42,12 @@
 
     span {
       text-decoration: none;
-      color: #777;
+      color: var( --footer-text-color);
       display: flex;
       align-items: center;
       transition: color 0.3s ease-in-out;
       &:hover {
-        color: black !important;
+        color: var(--text-color) !important;
       }
     }
   }

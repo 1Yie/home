@@ -1,9 +1,9 @@
 .infoContainer {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
 
   #info {
     padding: 50px;
-    background-color: #f8f8f86f;
+    background-color: var(--bg-sub-text-color);
 
     .infoContent {
 
@@ -17,15 +17,15 @@
 }
 
 .space {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid var(--border-color);
 
   #spaceConent {
     height: 60px;
 
     background-size: 100%;
     background-image: repeating-linear-gradient(135deg,
-        #f6f6f6 0px,
-        #f6f6f6 1px,
+        var(--bg-border-color) 0px,
+        var(--bg-border-color) 1px,
         transparent 1px,
         transparent 6px);
   }

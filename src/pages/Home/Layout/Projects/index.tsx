@@ -4,8 +4,8 @@ import { Icon } from "@ricons/utils";
 import { BookOpen, Code, CheckCircle } from "@ricons/fa";
 
 const titles = {
-  title:"跳转",
-  subtitle:"高处不胜寒"
+  title: "跳转",
+  subtitle: "不才明主弃，多病故人疏。"
 }
 
 const iconComponents = {

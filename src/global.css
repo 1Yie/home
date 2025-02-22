@@ -1,0 +1,102 @@
+:root {
+    /* 主线条颜色 */
+    --border-color: #dedede;
+    --bg-border-color: #f6f6f6;
+
+    /* 背景色 */
+    --bg-color: #fff;
+    --bg-sub-space-color: rgba(248, 248, 248, 0.436);
+
+    --bg-sub-text-color: #f8f8f86f;
+    --bg-sub-panel-color: #f8f8f85b;
+
+    /* 字体颜色 */
+    --text-color: black;
+    --logo-text-color: var(--text-color);
+    --text-sub-color: gray;
+
+    /* code 颜色 */
+    --code-color: #575757;
+    --code-bg-color: #d1d1d16f;
+
+    /* 链接颜色 */
+    --link-color: rgb(56, 56, 56);
+    --link-hover-color: black;
+
+    /* Header a元素选中颜色 */
+    --header-link-active-color: #333;
+    /* Header Menu li元素分割线颜色 */
+    --header-menu-border-color: #f0eeee98;
+
+    /* Footer 底部文字颜色 */
+    --footer-text-color: #777;
+
+    /* 鼠标选中颜色 */
+    --selection-color: #b3b3b3;
+
+    /* 选中颜色*/
+    --chose-color: #f6f6f6b0;
+
+    /* 滚动条颜色 */
+    --scrollbar-bg-color: rgb(226, 226, 226);
+    --scrollbar-thumb-color: black;
+
+    /* 头像边框颜色 */
+    --avatar-border-color: #dcdcdc;
+
+    /* fill 颜色（图标） */
+    --fill-color: #3b3b3b;
+}
+
+/* 深色模式颜色 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* 主线条颜色 */
+        --border-color: #515151;
+        --bg-border-color: #2d2d2d;
+
+        /* 背景色 */
+        --bg-color: rgb(21, 21, 21);
+        --bg-sub-space-color: rgba(64, 64, 64, 0.436);
+
+        --bg-sub-text-color: #39393942;
+        --bg-sub-panel-color: #3e3e3e5b;
+
+        /* 字体颜色 */
+        --text-color: rgba(255, 255, 255, 0.696);
+        --logo-text-color: var(--text-color);
+        --text-sub-color: rgba(161, 161, 161, 0.884);
+
+        /* code 颜色 */
+        --code-color: #bebebe;
+        --code-bg-color: #3b3b3bb1;
+
+        /* 链接颜色 */
+        --link-color: var(--text-color);
+        --link-hover-color: rgb(159, 159, 159);
+
+        /* Header a元素选中颜色 */
+        --header-link-active-color: #afafaf;
+        /* Header Menu li元素分割线颜色 */
+        --header-menu-border-color: #32323298;
+
+        /* Footer 底部文字颜色 */
+        --footer-text-color: #a6a6a6dd;
+
+        /* 鼠标选中颜色 */
+        --selection-color: #515151;
+
+        /* 选中颜色*/
+        --chose-color: #4a4a4a7a;
+
+        /* 滚动条颜色 */
+        --scrollbar-bg-color: rgba(0, 0, 0, 0.71);
+        --scrollbar-thumb-color: rgba(226, 226, 226, 0.728);
+
+        /* 头像边框颜色 */
+        --avatar-border-color: #2b2b2b;
+
+        /* fill 颜色（图标） */
+        --fill-color: #b0b0b0;
+    }
+}

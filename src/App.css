@@ -8,6 +8,8 @@ html {
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
+
+  background-color: var(--bg-color);
 }
 
 h1,
@@ -18,10 +20,18 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  color: var(--text-color);
 }
 
 p {
   margin: 0;
+  margin: 0;
+  color: var(--text-color);
+}
+
+
+li {
+  color: var(--text-color);
 }
 
 body {
@@ -34,7 +44,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: black !important;
+  color: var(--logo-text-color) !important;
   text-decoration: none !important;
   z-index: 1;
   white-space: nowrap;
@@ -43,46 +53,47 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  border-left: 1px solid #dedede;
-  border-right: 1px solid #dedede;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   box-sizing: border-box;
 }
 
 code {
   font-family: 'Source Code Pro', monospace;
   padding: 3px 6px;
-  background-color: #ececec6f;
+  background-color: var(--code-bg-color);
   /* 可被复制 */
   white-space: pre-wrap;
   word-wrap: break-word;
 
   border-radius: 8px;
-  color: #000;
+  color: var(--code-color);
 }
 
 a {
-  color: rgb(56, 56, 56) ;
+  color: var(--link-color) ;
   text-decoration: none;
   &:hover {
-    color: black;
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
 }
 
 ::selection {
-  background-color: #f2f2f2;
+  background-color: var(--selection-color);
 }
+
 ::-webkit-scrollbar,
 scrollbar {
   width: 12px;
   height: 6px;
-  background-color: rgb(226, 226, 226);
+  background-color: var(--scrollbar-bg-color);
 }
 
 ::-webkit-scrollbar-thumb,
 scrollbar-thumb {
   border-radius: 0;
-  background-color: black;
+  background-color: var(--scrollbar-thumb-color);
 }
 
 @media screen and (max-width: 768px) {
