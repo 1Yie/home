@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './content.module.css';
+import style from './content.module.scss';
 
 const Content: React.FC = () => {
 	return (

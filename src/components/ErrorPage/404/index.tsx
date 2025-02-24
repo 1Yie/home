@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './404.module.css';
+import style from './404.module.scss';
 
 const NotFoundPage: React.FC = () => {
 	return (

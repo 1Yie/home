@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import style from './header.module.css';
+import style from './header.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 
 import { Icon } from '@ricons/utils';

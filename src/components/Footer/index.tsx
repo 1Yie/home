@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from '@ricons/utils';
 import { Mail, LogoGithub, LogoTwitter } from '@ricons/ionicons5';
-import style from './footer.module.css';
+import style from './footer.module.scss';
 
 const headerName = {
 	name: 'ichiyo',

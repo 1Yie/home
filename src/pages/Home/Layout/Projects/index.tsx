@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './projects.module.css';
+import style from './projects.module.scss';
 import { Icon } from '@ricons/utils';
 import { BookOpen, Code, CheckCircle } from '@ricons/fa';
 

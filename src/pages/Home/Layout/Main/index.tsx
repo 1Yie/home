@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './main.module.css';
+import style from './main.module.scss';
 
 const titles = {
 	title: '存活于二十一世纪互联网的边缘',

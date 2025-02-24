@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './friends.module.css';
+import style from './friends.module.scss';
 import { Icon } from '@ricons/utils';
 import { Github, Twitter } from '@ricons/fa';
 
