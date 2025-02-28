@@ -18,6 +18,16 @@
 		"react-router-dom": "^6.29.0",
 		"sass": "^1.85.0"
 	},
+	"lint-staged": {
+		"src/**/*.{css,scss}":[
+			"npm run format"
+		],
+		"src/**/*.{js,jsx,tsx,ts,less,md,json}": [
+			"npm run lint",
+			"npm run format",
+			"git add ."
+		]
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.7.1",
 		"@commitlint/config-conventional": "^19.7.1",
