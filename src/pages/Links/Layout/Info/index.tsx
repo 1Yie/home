@@ -26,7 +26,7 @@ const Info: React.FC = () => {
 								<em>
 									<s>成为我的朋友 ξ( ✿＞◡❛)</s>
 								</em>
-								;
+								；
 							</li>
 						</ul>
 					</div>
