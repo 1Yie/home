@@ -7,9 +7,9 @@ const NotFoundPage: React.FC = () => {
 			<div className={style.Error404}>
 				<section id={style.error}>
 					<h1>404</h1>
-					<h2>Page Not Found</h2>
-					<p>The page you are looking for does not exist.</p>
-					<a href="/">Go Back to Homepage</a>
+					<h2>找不到页面</h2>
+					<p>访问的页面不存在</p>
+					<a href="/">返回主页</a>
 				</section>
 			</div>
 		</>
