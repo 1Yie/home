@@ -29,9 +29,14 @@ const Info: React.FC = () => {
 								;
 							</li>
 						</ul>
+					</div>
+
+					<div className={style.infoContentTip}>
+						<h1>
+							如果<strong>满足上述条件</strong>，欢迎邮件发送你的友链！
+						</h1>
 						<p>
-							如果<strong>满足上述条件</strong>，欢迎邮件发送你的友链
-							<strong>头像、名称、介绍、链接、以及社交账号地址（如 GitHub、Twitter 等）</strong>。
+							<strong>内容包含：</strong>头像、名称、介绍、链接、以及社交账号地址；
 						</p>
 						<p>
 							<strong>
@@ -39,7 +44,7 @@ const Info: React.FC = () => {
 							</strong>
 						</p>
 						<p>
-							<strong>邮箱主题为：友链申请</strong>
+							<strong>邮箱主题：友链申请</strong>
 							，我将在第一时间审核并添加到友链栏目中。
 						</p>
 					</div>

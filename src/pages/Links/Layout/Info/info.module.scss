@@ -1,44 +1,114 @@
 .infoContainer {
-  border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 
-  #info {
-    padding: 50px;
-    background-color: var(--bg-sub-text-color);
+	#info {
+		background-color: var(--bg-sub-text-color);
 
-    .infoContent {
+		.infoContent {
+			padding: 30px 80px;
 
-      padding: 0 80px;
-    }
+			p {
+				font-size: 20px;
+				margin-top: 4px;
+			}
 
-    p {
-      margin-top: 4px;
-    }
-  }
+			h1 {
+				font-size: 32px;
+				margin-bottom: 8px;
+			}
+
+			ul {
+				margin: 0;
+			}
+
+			li {
+				font-size: 18px;
+				margin-bottom: 8px;
+			}
+
+			li:last-child {
+				margin-bottom: 0px;
+			}
+
+			li::marker {
+				color: var(--text-sub-color);
+			}
+		}
+
+		.infoContentTip {
+			padding: 40px 60px;
+			background-color: var(--bg-color);
+			position: relative;
+
+			h1 {
+				font-size: 28px;
+				margin-bottom: 18px;
+			}
+
+			p {
+				font-size: 18px;
+				margin-bottom: 8px;
+			}
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.infoContentTip::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-image: repeating-linear-gradient(to right, var(--border-color) -10px, var(--border-color) 10px, transparent 10px, transparent 20px);
+			background-position-x: 15px;
+			background-position-y: top;
+			background-size: 100% 1px;
+			background-repeat: repeat-x;
+		}
+	}
 }
 
 .space {
-  border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 
-  #spaceConent {
-    height: 60px;
+	#spaceConent {
+		height: 60px;
 
-    background-size: 100%;
-    background-image: repeating-linear-gradient(135deg,
-        var(--bg-border-color) 0px,
-        var(--bg-border-color) 1px,
-        transparent 1px,
-        transparent 6px);
-  }
+		background-size: 100%;
+		background-image: repeating-linear-gradient(135deg, var(--bg-border-color) 0px, var(--bg-border-color) 1px, transparent 1px, transparent 6px);
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .infoContainer {
-    #info {
-      padding: 20px;
+	.infoContainer {
+		#info {
+			.infoContent {
+				padding: 20px 40px;
 
-      .infoContent {
-        padding: 0 10px;
-      }
-    }
-  }
+				h1 {
+					font-size: 28px;
+				}
+
+				li {
+					font-size: 16px;
+				}
+			}
+
+			.infoContentTip {
+				padding: 20px 40px;
+
+				h1 {
+					font-size: 22px;
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
 }
